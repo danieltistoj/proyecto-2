@@ -90,7 +90,7 @@ def mostrar_autor(cola,pila)
         t.title = " Autor -#{elemento[:nombre]}-"
         t.headings=(['ISBN','NOMBRE','PRECIO','Unidades'])
     loop do
-      if tope[:autor] == elemento[:nombre] && tope[:se_imprime] !=nil
+      if tope[:autor] == elemento[:nombre] && tope[:se_imprime] != 'no'
       t.add_row([
         tope[:ISBN],
         tope[:nombre],
